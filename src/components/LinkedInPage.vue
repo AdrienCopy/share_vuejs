@@ -7,7 +7,7 @@
       <div class="container">
         <p id="status">{{ statusMessage }}</p>
         <input type="text" v-model="shareUrl" id="shareUrl" placeholder="Enter your URL" />
-        <textarea v-model="shareText" id="shareText" placeholder="Enter your text here (does not work with Facebook for now)"></textarea>
+        <textarea v-model="shareText" id="shareText" placeholder="Enter your text here"></textarea>
         <input type="text" v-model="shareHashtag" id="shareHashtag" placeholder="Enter one or more hashtags" />
         <input type="file" @change="handleFileUpload" id="shareFile" />
         <button class="share-button linkedin-button" @click="shareOnLinkedIn">Share on LinkedIn</button>

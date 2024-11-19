@@ -1,6 +1,7 @@
 {
     "rewrites": [
-      { "source": "/linkedin(.*)", "destination": "/linkedin" }
+        { "source": "/(.*)", "destination": "/" },
+        { "source": "/linkedin(.*)", "destination": "/linkedin" }
     ]
   }
   
