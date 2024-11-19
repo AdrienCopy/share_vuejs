@@ -51,6 +51,7 @@
             const accessToken = await this.getAccessToken(authCode);
             localStorage.setItem("linkedinAccessToken", accessToken);
             this.accessToken = accessToken;
+            console.log(accessToken);
             await this.checkLinkedInConnection();
             } catch (error) {
             console.error("Erreur lors de la récupération de l'access token:", error);
