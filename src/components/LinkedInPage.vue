@@ -44,14 +44,14 @@
         async checkAuthCode() {
         const urlParams = new URLSearchParams(window.location.search);
         const authCode = urlParams.get("code");
-        console.log(authCode);
+        console.log('authCode : ', authCode);
 
         if (authCode) {
             try {
             const accessToken = await this.getAccessToken(authCode);
             localStorage.setItem("linkedinAccessToken", accessToken);
             this.accessToken = accessToken;
-            console.log(accessToken);
+            console.log('accessToken : ', accessToken);
             await this.checkLinkedInConnection();
             } catch (error) {
             console.error("Erreur lors de la récupération de l'access token:", error);
