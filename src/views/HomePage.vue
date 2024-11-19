@@ -1,4 +1,5 @@
 <template>
+  
     <div class="container">
     <p>Test Page !</p>
     </div>
@@ -11,7 +12,7 @@
     <div class="container">
         <button class="share-button linkedin-button"><router-link to="/shareon" class="router-link">Share</router-link></button>
     </div>
-  </template>
+</template>
   
   <script>
   export default {
