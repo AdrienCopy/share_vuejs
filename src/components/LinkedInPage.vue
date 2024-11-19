@@ -40,6 +40,11 @@
     mounted() {
         this.checkAuthCode();
     },
+    watch: {
+    shareUrl(newValue) {
+        console.log("Nouvelle valeur de shareUrl :", newValue);
+    }
+    },
     methods: {
         async checkAuthCode() {
         const urlParams = new URLSearchParams(window.location.search);
@@ -98,7 +103,7 @@
 
         const data = await response.json();
         console.log("Response data:", data);
-        
+
         if (data.access_token) {
             return data.access_token;
         } else {
