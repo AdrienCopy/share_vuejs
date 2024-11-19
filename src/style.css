@@ -1,0 +1,106 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+  color: #808080;
+}
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 10px 0;
+}
+input[type="text"], input[type="tel"], input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+textarea {
+  width: calc(100% - 20px);
+  padding: 12px 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+label {
+  margin-bottom: 5px;
+  color: #075e54;
+}
+.share-button {
+  text-decoration: none;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+.facebook-button {
+  background-color: #1877f2;
+}
+.facebook-button:hover {
+  background-color: #166fe5;
+}
+.linkedin-button {
+  background-color: #0077b5;
+}
+.linkedin-button:hover {
+  background-color: #006699;
+}
+.back {
+  background-color: #646464;
+}
+.back:hover {
+  background-color: #b1b0b0;
+}
+.whatsapp-button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+
+.router-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.router-link:hover {
+  text-decoration: underline;
+}
