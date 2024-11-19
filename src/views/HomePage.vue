@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-    <p>Test Page</p>
+    <p>Test Page !</p>
     </div>
 
     <div class="container">
