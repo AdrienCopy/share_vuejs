@@ -44,6 +44,7 @@
         async checkAuthCode() {
         const urlParams = new URLSearchParams(window.location.search);
         const authCode = urlParams.get("code");
+        console.log(authCode);
 
         if (authCode) {
             try {
