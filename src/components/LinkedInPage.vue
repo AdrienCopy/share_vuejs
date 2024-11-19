@@ -97,6 +97,8 @@
         });
 
         const data = await response.json();
+        console.log("Response data:", data);
+        
         if (data.access_token) {
             return data.access_token;
         } else {
