@@ -42,7 +42,7 @@
     },
     watch: {
     shareUrl(newValue) {
-        console.log("Nouvelle valeur de shareUrl :", newValue);
+        console.log("shareUrl :", newValue);
     }
     },
     methods: {
